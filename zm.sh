@@ -9,4 +9,3 @@ mysql -e "ALTER USER 'zmuser'@localhost IDENTIFIED BY 'zmpass';"
 mysql -e "GRANT ALL PRIVILEGES ON zm.* TO 'zmuser'@'localhost' WITH GRANT OPTION;"
 mysql -e "FLUSH PRIVILEGES ;"
 mysqladmin -uroot --password="" reload 2>/dev/null
-mysql -u zmuser --password="" zm < /usr/share/zoneminder/db/zm_update-1.37.36.sql 2>/dev/null
