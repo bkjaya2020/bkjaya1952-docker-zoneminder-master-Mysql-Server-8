@@ -1,4 +1,4 @@
-FROM ubuntu:22.10
+FROM nickcharlton/packer-ubuntu-2004
 MAINTAINER B.K.Jayasundera
 
 # Update base packages
