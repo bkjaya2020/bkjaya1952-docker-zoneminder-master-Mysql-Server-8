@@ -1,4 +1,4 @@
-FROM murilomagalhaes/vagrant-lamp
+FROM ubuntu:focal
 MAINTAINER B.K.Jayasundera
 
 # Update base packages
