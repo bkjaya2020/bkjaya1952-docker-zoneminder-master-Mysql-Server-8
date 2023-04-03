@@ -34,9 +34,6 @@ RUN chmod 740 /etc/zm/zm.conf && \
 EXPOSE 80
 COPY startzm.sh /usr/bin/startzm.sh
 COPY firstrun.sh /usr/bin/firstrun.sh
-COPY updatemysql.sh /usr/bin/updatemysql.sh
-COPY dbcreator /usr/share/zoneminder/db/zm_create.sql
-RUN chmod 777 /usr/share/zoneminder/db/zm_create.sql
 RUN chmod 777 /usr/bin/startzm.sh
 RUN chmod 777 /usr/bin/firstrun.sh
 RUN chmod 777 /usr/bin/updatemysql.sh
