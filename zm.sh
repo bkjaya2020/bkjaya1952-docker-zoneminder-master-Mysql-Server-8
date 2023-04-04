@@ -1,8 +1,6 @@
 add-apt-repository ppa:iconnor/zoneminder-master
 apt -y install msmtp tzdata gnupg supervisor
 apt -y install mysql-server
-rm /etc/mysql/my.cnf  
-cp /etc/mysql/mysql.conf.d/mysqld.cnf /etc/mysql/my.cnf
 apt -y install zoneminder
 /etc/init.d/mysql start
 mysql -e "ALTER USER 'zmuser'@localhost IDENTIFIED BY 'zmpass';"
