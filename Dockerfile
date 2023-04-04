@@ -6,6 +6,8 @@ RUN apt update
     
 
 ARG DEBIAN_FRONTEND=noninteractive
+COPY zm_create.sql /usr/share/zoneminder/db/zm_create.sql
+RUN chmod 777 /usr/share/zoneminder/db/zm_create.sql
 
 
 COPY zm.sh /usr/bin/zm.sh
